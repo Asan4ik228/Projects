@@ -160,7 +160,7 @@ def group(message):
                     bot.send_video(i, vid)
                 bot.send_message(myid, "Отправил видео всем")
                 return
-        if 'егодня' or 'автра' in message.text:
+        if 'егодня' in message.text or 'автра' in message.text:
             norasp(message.chat.id)
         else:
             answer(message.text, message)
