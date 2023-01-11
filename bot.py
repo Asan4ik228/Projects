@@ -1,6 +1,6 @@
 import telebot
-from threading import Thread
-from time import sleep
+# from threading import Thread
+# from time import sleep
 from datetime import datetime
 from datetime import timedelta
 from telebot import types
@@ -11,7 +11,7 @@ bot = telebot.TeleBot(token)
 myid = 987747961
 t = datetime.now() + timedelta(hours=3)
 
-
+"""
 def spam(seconds):
     sleep(seconds)
     while True:
@@ -31,7 +31,7 @@ sec += (59 - t.minute)*60
 sec += 60 - t.second
 th = Thread(target=spam, args=(sec,))
 th.start()
-
+"""
 
 @bot.message_handler(commands=['start'])
 def welcome(message):
