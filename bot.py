@@ -125,9 +125,11 @@ def answer(mes, message):
     elif '?' in mes:
         ans = ques[randint(0, len(ques) - 1)]
     else:
+        '''
         for i in range(len(weekdays)):
             if weekdays[i] in mes:
                 norasp(message.chat.id)
+        '''
         if r == 0:
             pic = open(f'static/noans/{randint(0, 5)}.webp', 'rb')
             bot.send_sticker(message.chat.id, pic)
